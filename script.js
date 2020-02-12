@@ -1,3 +1,6 @@
+var now = moment().format('dddd, MMM Do, YYYY');
+$('#currentDay').text(now);
+
 var storedArray = [
     {
         time: '#nine-am',
