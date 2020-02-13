@@ -1,25 +1,6 @@
 var now = moment().format('dddd, MMMM Do, YYYY');
 $('#currentDay').text(now);
 
-$('textarea').each(function() {
-    $(this)
-        .removeClass('present')
-        .removeClass('past')
-        .removeClass('future');
-
-    var test = moment().format('H');
-    var htmlData = $(this).attr('data-num');
-    console.log(htmlData);
-
-    if (test === htmlData) {
-        $(this).addClass('present');
-    } else if (test > htmlData) {
-        $(this).addClass('past');
-    } else {
-        $(this).addClass('future');
-    }
-});
-
 var storedArray = [
     {
         time: '#nine-am',
@@ -62,6 +43,34 @@ var storedArray = [
 var userText = '';
 
 $(document).ready(function() {
+    // color coding function, set to check for need for change every minute
+    setInterval(function() {
+        var currentMinutes = moment().format('mm');
+        console.log(currentMinutes);
+        if (currentMinutes === '00') {
+            setColors();
+        }
+    }, 60 * 1000);
+
+    function setColors() {
+        $('textarea').each(function() {
+            $(this)
+                .removeClass('present')
+                .removeClass('past')
+                .removeClass('future');
+
+            var test = moment().format('H');
+            var htmlData = $(this).attr('data-num');
+            if (test === htmlData) {
+                $(this).addClass('present');
+            } else if (+test > +htmlData) {
+                $(this).addClass('past');
+            } else {
+                $(this).addClass('future');
+            }
+        });
+    }
+
     // local storage functions
     function storage() {
         var storedInputs = JSON.parse(localStorage.getItem('storedArray'));
@@ -69,7 +78,6 @@ $(document).ready(function() {
             storedArray = storedInputs;
         }
     }
-    // for colors
 
     function storeUserInput() {
         localStorage.setItem('storedArray', JSON.stringify(storedArray));
@@ -98,6 +106,7 @@ $(document).ready(function() {
     });
 
     // call startup functions
+    setColors();
     storage();
     insertStorage();
 });

@@ -1,7 +1,8 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-color: #fefcff;
 }
 textarea {
     background: transparent;
@@ -11,6 +12,9 @@ textarea {
     padding: 10px;
 }
 .jumbotron {
+    background-image: url(images/background2.png);
+    background-position: center;
+    background-size: cover;
     text-align: center;
     background-color: #ece4f2;
     color: #322c36;
