@@ -1,71 +1,103 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
 }
-
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #322c36;
+    padding: 10px;
 }
-
 .jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
+    text-align: center;
+    background-color: #ece4f2;
+    color: #322c36;
+    border-radius: 0;
+    border-bottom: 3px solid black;
+    padding: 25px 40px;
 }
-
-.description{
-  white-space: pre-wrap;
-}
-
-.time-block{
-  text-align: center;
-  border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
 .past {
-  background-color: #d3d3d3;
-  color: white;
+    background-color: #ece4f2;
+    color: #322c36;
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+    background-color: #dbcfe3;
+    color: #322c36;
 }
 
 .future {
-  background-color: #77dd77;
-  color: white;
+    background-color: #cabcd4;
+    color: #322c36;
 }
-
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+.input-group-text {
+    padding: 3px 10px;
+    width: 70px;
+    background-color: transparent;
 }
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+#nine-am {
+    border-radius: 0;
+}
+#ten-am,
+#eleven-am,
+#twelve-pm,
+#one-pm,
+#two-pm,
+#three-pm,
+#four-pm,
+#five-pm {
+    border-radius: 0;
+    border-top: none;
+}
+#nine {
+    border-radius: 0;
+    border-left: none;
+}
+#ten,
+#eleven,
+#twelve,
+#one,
+#two,
+#three,
+#four,
+#five {
+    border-radius: 0;
+    border-left: none;
+    border-top: none;
+}
+button {
+    background-image: url(images/plus-circle-thin-32.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 15px;
+}
+#button-nine-am:hover,
+#button-ten-am:hover,
+#button-eleven-am:hover,
+#button-twelve-pm:hover,
+#button-one-pm:hover,
+#button-two-pm:hover,
+#button-three-pm:hover,
+#button-four-pm:hover,
+#button-five-pm:hover {
+    background-image: url(images/plus-circle-thin-32-lilac.png);
+    background-color: white;
+    border-color: white;
+    outline-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 15px;
+}
+#button-nine-am,
+#button-ten-am,
+#button-eleven-am,
+#button-twelve-pm,
+#button-one-pm,
+#button-two-pm,
+#button-three-pm,
+#button-four-pm,
+#button-five-pm {
+    border: none;
 }
