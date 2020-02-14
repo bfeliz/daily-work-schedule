@@ -30,7 +30,7 @@ textarea:focus {
 }
 /* jumbotron */
 .jumbotron {
-    background-image: url(images/background2.png);
+    background-image: url(../assets/images/background.png);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -76,7 +76,7 @@ textarea:focus {
 }
 /* buttons */
 button {
-    background-image: url(images/plus-circle-thin-32.png);
+    background-image: url(../assets/images/plus-circle-thin-32.png);
     background-repeat: no-repeat;
     background-position: center;
     margin: 0px 15px;
@@ -90,7 +90,7 @@ button {
 #button-three-pm:hover,
 #button-four-pm:hover,
 #button-five-pm:hover {
-    background-image: url(images/plus-circle-thin-32-lilac.png);
+    background-image: url(../assets/images/plus-circle-thin-32-lilac.png);
     background-color: white;
     border-color: white;
     outline-color: white;
