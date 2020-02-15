@@ -95,11 +95,9 @@ $(document).ready(function() {
         for (let j = 0; j < storedArray.length; j++) {
             var btnSelect = storedArray[j].time;
             var userText = $(btnSelect).val();
-            if (userText !== "") {
-                storedArray[j].todo = userText;
-                storeUserInput();
-                insertStorage();
-            }
+            storedArray[j].todo = userText;
+            storeUserInput();
+            insertStorage();
         }
     });
 
