@@ -4,7 +4,11 @@
 
 Fifth Homework Assignment - A simple daily calendar that allows the user to save their to-dos or meetings in specific time slots.
 
-## Link to github repository:
+The following image shows a glimpse of the application:
+
+![daily work schedule](assets/images/calendar.png)
+
+## Link to GitHub repository:
 
 https://github.com/bfeliz/daily-work-schedule
 
