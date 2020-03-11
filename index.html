@@ -15,7 +15,7 @@
 <body id="bootstrap-overrides">
   <header class="jumbotron">
     <h1 class="display-3">Schedule Your Day</h1>
-    <p class="lead">A daily planning calendar</p>
+    <p class="lead">A Daily Planning Calendar</p>
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
@@ -27,7 +27,7 @@
           </div>
           <textarea class="nine-border" data-num="9" id="nine-am" aria-label="With textarea"></textarea>
           <div class="input-group-append">
-            <button class="btn btn-outline-light" type="button" id="button-nine-am"></button>
+            <button class="btn btn-outline-light add" type="button" id="button-nine-am"></button>
           </div>
         </div> <!-- end input group -->
         <div class="input-group input-group-lg">
@@ -36,7 +36,7 @@
           </div>
           <textarea data-num="10" id="ten-am" aria-label="With textarea"></textarea>
           <div class="input-group-append">
-            <button class="btn btn-outline-light" type="button" id="button-ten-am"></button>
+            <button class="btn btn-outline-light add" type="button" id="button-ten-am"></button>
           </div>
         </div> <!-- end input group -->
         <div class="input-group input-group-lg">
@@ -45,7 +45,7 @@
           </div>
           <textarea data-num="11" id="eleven-am" aria-label="With textarea"></textarea>
           <div class="input-group-append">
-            <button class="btn btn-outline-light" type="button" id="button-eleven-am"></button>
+            <button class="btn btn-outline-light add" type="button" id="button-eleven-am"></button>
           </div>
         </div> <!-- end input group -->
         <div class="input-group input-group-lg">
@@ -54,7 +54,7 @@
           </div>
           <textarea data-num="12" id="twelve-pm" aria-label="With textarea"></textarea>
           <div class="input-group-append">
-            <button class="btn btn-outline-light" type="button" id="button-twelve-pm"></button>
+            <button class="btn btn-outline-light add" type="button" id="button-twelve-pm"></button>
           </div>
         </div> <!-- end input group -->
         <div class="input-group input-group-lg">
@@ -63,7 +63,7 @@
           </div>
           <textarea data-num="13" id="one-pm" aria-label="With textarea"></textarea>
           <div class="input-group-append">
-            <button class="btn btn-outline-light" type="button" id="button-one-pm"></button>
+            <button class="btn btn-outline-light add" type="button" id="button-one-pm"></button>
           </div>
         </div> <!-- end input group -->
         <div class="input-group input-group-lg">
@@ -72,7 +72,7 @@
           </div>
           <textarea data-num="14" id="two-pm" aria-label="With textarea"></textarea>
           <div class="input-group-append">
-            <button class="btn btn-outline-light" type="button" id="button-two-pm"></button>
+            <button class="btn btn-outline-light add" type="button" id="button-two-pm"></button>
           </div>
         </div> <!-- end input group -->
         <div class="input-group input-group-lg">
@@ -81,7 +81,7 @@
           </div>
           <textarea data-num="15" id="three-pm" aria-label="With textarea"></textarea>
           <div class="input-group-append">
-            <button class="btn btn-outline-light" type="button" id="button-three-pm"></button>
+            <button class="btn btn-outline-light add" type="button" id="button-three-pm"></button>
           </div>
         </div> <!-- end input group -->
         <div class="input-group input-group-lg">
@@ -90,7 +90,7 @@
           </div>
           <textarea data-num="16" id="four-pm" aria-label="With textarea"></textarea>
           <div class="input-group-append">
-            <button class="btn btn-outline-light" type="button" id="button-four-pm"></button>
+            <button class="btn btn-outline-light add" type="button" id="button-four-pm"></button>
           </div>
         </div> <!-- end input group -->
         <div class="input-group input-group-lg">
@@ -99,17 +99,21 @@
           </div>
           <textarea data-num="17" id="five-pm" aria-label="With textarea"></textarea>
           <div class="input-group-append">
-            <button class="btn btn-outline-light" type="button" id="button-five-pm"></button>
+            <button class="btn btn-outline-light add" type="button" id="button-five-pm"></button>
           </div>
         </div> <!-- end input group -->
       </div>
     </form>
 
-  </div>
+    <div class="clear">
+      <p class="new-day">Tomorrow is another day! Do you want to clear your list for tomorrow?</p>
+      <a href="#" class="clear-btn">Yes, clear all tasks!</button>
+      </a>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

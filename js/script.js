@@ -1,8 +1,8 @@
-var now = moment().format("dddd, MMMM Do, YYYY");
+const now = moment().format("dddd, MMMM Do, YYYY");
 $("#currentDay").text(now);
 
-var userText = "";
-var storedArray = [
+let userText = "";
+let storedArray = [
     {
         time: "#nine-am",
         todo: ""
@@ -44,7 +44,7 @@ var storedArray = [
 $(document).ready(function() {
     // color coding function, set to check for need for change every minute
     setInterval(function() {
-        var currentMinutes = moment().format("mm");
+        const currentMinutes = moment().format("mm");
         if (currentMinutes === "00") {
             setColors();
         }
@@ -57,8 +57,8 @@ $(document).ready(function() {
                 .removeClass("past")
                 .removeClass("future");
 
-            var test = moment().format("H");
-            var htmlData = $(this).attr("data-num");
+            const test = moment().format("H");
+            const htmlData = $(this).attr("data-num");
             if (test === htmlData) {
                 $(this).addClass("present");
             } else if (+test > +htmlData) {
@@ -71,7 +71,7 @@ $(document).ready(function() {
 
     // local storage functions
     function storage() {
-        var storedInputs = JSON.parse(localStorage.getItem("storedArray"));
+        const storedInputs = JSON.parse(localStorage.getItem("storedArray"));
         if (storedInputs !== null) {
             storedArray = storedInputs;
         }
@@ -84,17 +84,65 @@ $(document).ready(function() {
     // show stored user input in text fields
     function insertStorage() {
         for (let i = 0; i < storedArray.length; i++) {
-            var text = storedArray[i].todo;
-            var timeSlot = storedArray[i].time;
+            const text = storedArray[i].todo;
+            const timeSlot = storedArray[i].time;
             $(timeSlot).text(text);
         }
     }
+
+    function resetList() {
+        storedArray = [
+            {
+                time: "#nine-am",
+                todo: ""
+            },
+            {
+                time: "#ten-am",
+                todo: ""
+            },
+            {
+                time: "#eleven-am",
+                todo: ""
+            },
+            {
+                time: "#twelve-pm",
+                todo: ""
+            },
+            {
+                time: "#one-pm",
+                todo: ""
+            },
+            {
+                time: "#two-pm",
+                todo: ""
+            },
+            {
+                time: "#three-pm",
+                todo: ""
+            },
+            {
+                time: "#four-pm",
+                todo: ""
+            },
+            {
+                time: "#five-pm",
+                todo: ""
+            }
+        ];
+        storeUserInput();
+        storage();
+        insertStorage();
+    }
+
+    // event listener for favorites clear button
+    $(".clear").on("click", ".clear-btn", resetList);
+
     // save button calls
     $(".input-group").on("click", "button", function(event) {
         event.preventDefault();
         for (let j = 0; j < storedArray.length; j++) {
-            var btnSelect = storedArray[j].time;
-            var userText = $(btnSelect).val();
+            const btnSelect = storedArray[j].time;
+            const userText = $(btnSelect).val();
             storedArray[j].todo = userText;
             storeUserInput();
             insertStorage();

@@ -75,7 +75,7 @@ textarea:focus {
     border-top: none;
 }
 /* buttons */
-button {
+.add {
     background-image: url(../assets/images/plus-circle-thin-32.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -108,4 +108,30 @@ button {
 #button-four-pm,
 #button-five-pm {
     border: none;
+}
+.clear {
+    text-align: center;
+    color: #322c36;
+}
+.clear-btn {
+    padding-bottom: 5%;
+}
+/* unvisited link */
+.clear-btn:link {
+    color: #322c36;
+}
+
+/* visited link */
+.clear-btn:visited {
+    color: #322c36;
+}
+
+/* mouse over link */
+.clear-btn:hover {
+    color: #8f809c;
+}
+
+/* selected link */
+.clear-btn:active {
+    color: #8f809c;
 }
