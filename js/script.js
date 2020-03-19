@@ -4,6 +4,10 @@ $("#currentDay").text(now);
 let userText = "";
 let storedArray = [
     {
+        time: "#eight-am",
+        todo: ""
+    },
+    {
         time: "#nine-am",
         todo: ""
     },
@@ -37,6 +41,26 @@ let storedArray = [
     },
     {
         time: "#five-pm",
+        todo: ""
+    },
+    {
+        time: "#six-pm",
+        todo: ""
+    },
+    {
+        time: "#seven-pm",
+        todo: ""
+    },
+    {
+        time: "#eight-pm",
+        todo: ""
+    },
+    {
+        time: "#nine-pm",
+        todo: ""
+    },
+    {
+        time: "#ten-pm",
         todo: ""
     }
 ];
@@ -93,6 +117,10 @@ $(document).ready(function() {
     function resetList() {
         storedArray = [
             {
+                time: "#eight-am",
+                todo: ""
+            },
+            {
                 time: "#nine-am",
                 todo: ""
             },
@@ -126,6 +154,26 @@ $(document).ready(function() {
             },
             {
                 time: "#five-pm",
+                todo: ""
+            },
+            {
+                time: "#six-pm",
+                todo: ""
+            },
+            {
+                time: "#seven-pm",
+                todo: ""
+            },
+            {
+                time: "#eight-pm",
+                todo: ""
+            },
+            {
+                time: "#nine-pm",
+                todo: ""
+            },
+            {
+                time: "#ten-pm",
                 todo: ""
             }
         ];

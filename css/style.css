@@ -24,7 +24,7 @@ textarea:focus {
     border-color: #7b7580;
     outline-color: #7b7580;
 }
-.nine-border {
+.eight-border {
     border-top: thin solid;
     border-color: #99939e;
 }
@@ -58,10 +58,11 @@ textarea:focus {
     width: 70px;
     background-color: transparent;
 }
-#nine {
+#eight {
     border-radius: 0;
     border-left: none;
 }
+#nine,
 #ten,
 #eleven,
 #twelve,
@@ -69,7 +70,12 @@ textarea:focus {
 #two,
 #three,
 #four,
-#five {
+#five,
+#six,
+#seven,
+#eightp,
+#ninep,
+#tenp {
     border-radius: 0;
     border-left: none;
     border-top: none;
@@ -81,6 +87,7 @@ textarea:focus {
     background-position: center;
     margin: 0px 15px;
 }
+#button-eight-am:hover,
 #button-nine-am:hover,
 #button-ten-am:hover,
 #button-eleven-am:hover,
@@ -89,7 +96,12 @@ textarea:focus {
 #button-two-pm:hover,
 #button-three-pm:hover,
 #button-four-pm:hover,
-#button-five-pm:hover {
+#button-five-pm:hover,
+#button-six-pm:hover,
+#button-seven-pm:hover,
+#button-eight-pm:hover,
+#button-nine-pm:hover,
+#button-ten-pm:hover {
     background-image: url(../assets/images/plus-circle-thin-32-lilac.png);
     background-color: white;
     border-color: white;
@@ -98,6 +110,7 @@ textarea:focus {
     background-position: center;
     margin: 0px 15px;
 }
+#button-eight-am,
 #button-nine-am,
 #button-ten-am,
 #button-eleven-am,
@@ -106,7 +119,12 @@ textarea:focus {
 #button-two-pm,
 #button-three-pm,
 #button-four-pm,
-#button-five-pm {
+#button-five-pm,
+#button-six-pm,
+#button-seven-pm,
+#button-eight-pm,
+#button-nine-pm,
+#button-ten-pm {
     border: none;
 }
 .clear {
